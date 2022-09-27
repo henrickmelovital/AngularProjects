@@ -1,0 +1,10 @@
+<div class="container">
+  <app-pessoa-cadastro
+    (novaPessoa)="onAdicionarPessoa($event)"
+  ></app-pessoa-cadastro>
+  <div class="row">
+    <div class="col-4" *ngFor="let pessoa of pessoas">
+      <app-pessoa-cartao [nome]="pessoa"></app-pessoa-cartao>
+    </div>
+  </div>
+</div>
